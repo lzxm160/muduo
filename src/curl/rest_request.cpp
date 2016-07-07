@@ -6,7 +6,7 @@
 using namespace muduo::net;
 
 EventLoop* g_loop = NULL;
-string temp;
+std::string temp;
 void onData(const char* data, int len)
 {
   printf("len %d\n", len);
