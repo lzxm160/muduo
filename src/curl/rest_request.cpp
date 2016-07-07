@@ -3,6 +3,12 @@
 #include <boost/bind.hpp>
 #include <stdio.h>
 #include <iostream>
+#include <muduo/base/Logging.h>
+#include <muduo/net/EventLoop.h>
+#include <boost/bind.hpp>
+#include <boost/ptr_container/ptr_vector.hpp>
+#include <stdio.h>
+#include <sstream>
 using namespace muduo::net;
 
 EventLoop* g_loop = NULL;
@@ -27,7 +33,8 @@ int main(int argc, char* argv[])
   curl::Curl::initialize(curl::Curl::kCURLssl);
   curl::Curl curl(&loop);
 
-  curl::RequestPtr req = curl.getUrl("http://apilayer.net/api/live?access_key=beed451506493436d5a5ec0966b5e72a");
+  //curl::RequestPtr req = curl.getUrl("http://apilayer.net/api/live?access_key=beed451506493436d5a5ec0966b5e72a");
+  curl::RequestPtr req = curl.getUrl("hhh");
   req->setDataCallback(onData);
   req->setDoneCallback(done);
 
