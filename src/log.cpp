@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <sys/resource.h>
 
-int kRollSize = 500*1000*1000;
+int kRollSize = 50*1000*1000;
 
 muduo::AsyncLogging* g_asyncLog = NULL;
 
