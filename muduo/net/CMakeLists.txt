@@ -56,10 +56,6 @@ install(FILES ${HEADERS} DESTINATION include/muduo/net)
 add_subdirectory(http)
 add_subdirectory(inspect)
 
-if(NOT CMAKE_BUILD_NO_EXAMPLES)
-  add_subdirectory(tests)
-endif()
-
 if(PROTOBUF_FOUND)
   add_subdirectory(protobuf)
   add_subdirectory(protorpc)

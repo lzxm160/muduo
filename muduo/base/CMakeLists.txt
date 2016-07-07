@@ -28,6 +28,4 @@ install(TARGETS muduo_base_cpp11 DESTINATION lib)
 file(GLOB HEADERS "*.h")
 install(FILES ${HEADERS} DESTINATION include/muduo/base)
 
-if(NOT CMAKE_BUILD_NO_EXAMPLES)
-  add_subdirectory(tests)
-endif()
+
