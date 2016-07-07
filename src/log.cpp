@@ -19,12 +19,12 @@ void bench(bool longLog)
   muduo::Logger::setOutput(asyncOutput);
 
   int cnt = 0;
-  const int kBatch = 1000;
+  const int kBatch = 1000000;
   muduo::string empty = " ";
   muduo::string longStr(3000, 'X');
   longStr += " ";
 
-  for (int t = 0; t < 30; ++t)
+  for (int t = 0; t < 1; ++t)
   {
     muduo::Timestamp start = muduo::Timestamp::now();
     for (int i = 0; i < kBatch; ++i)
