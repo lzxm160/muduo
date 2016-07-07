@@ -16,7 +16,7 @@ void onData(const char* data, int len)
 void done(curl::Request* c, int code)
 {
   printf("done %p %s %d\n", c, c->getEffectiveUrl(), code);
-  cout<<temp<<":"<<__FILE__<<":"<<__LINE__<<endl;
+  std::cout<<temp<<":"<<__FILE__<<":"<<__LINE__<<std::endl;
 }
 
 int main(int argc, char* argv[])
