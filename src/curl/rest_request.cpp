@@ -2,7 +2,7 @@
 #include <muduo/net/EventLoop.h>
 #include <boost/bind.hpp>
 #include <stdio.h>
-
+#include <iostream>
 using namespace muduo::net;
 
 EventLoop* g_loop = NULL;
